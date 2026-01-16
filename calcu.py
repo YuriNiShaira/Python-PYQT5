@@ -72,9 +72,9 @@ class Widget(QWidget):
             self.current_expression = ""
             self.label.setText("0")
         elif text == "=":
-            if self.current_expression == "143":  # Special case for "143"
+            if self.current_expression == "143": 
                 self.label.setText("I love Shaira")
-                self.current_expression = ""  # Clear the expression
+                self.current_expression = "" 
             elif self.current_expression == "5254":
                 self.label.setText("Mahal na Mahal ko si Shaira Danica")
                 self.current_expression = ""
@@ -96,3 +96,4 @@ if __name__ == "__main__":
     widget = Widget()
     widget.show()
     sys.exit(app.exec_())
+
